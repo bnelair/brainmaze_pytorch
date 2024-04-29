@@ -15,7 +15,7 @@ import os
 import re
 
 ## get version from file
-VERSIONFILE="./brainmaze_pytorch/__init__.py"
+VERSIONFILE="./brainmaze_torch/__init__.py"
 verstrline = open(VERSIONFILE, "rt").read()
 VSRE = r"^__version__ = ['\"]([^'\"]*)['\"]"
 mo = re.search(VSRE, verstrline, re.M)
@@ -25,7 +25,7 @@ else:
     raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE,))
 
 setuptools.setup(
-    name="brainmaze-pytorch",
+    name="brainmaze-torch",
     version=verstr,
     license='',
     url="https://github.com/bnelair/brainmaze_pytorch",
